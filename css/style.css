@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    
+}
+/*divs gerais*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+/******/
+
+header{
+   
+    background-color: #022859;
+    padding: 10px 2%; /*espaçamento de 2% 
+    na hora do responsivo*/
+}
+
+.logo-1{
+    float: left;
+    width: 160px;
+    height: 90px;
+    background-image: url('../images/logo-solar-teste.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.logo-2{
+    float: right;
+    width: 150px;
+    height: 90px;
+    background-image: url('../images/solar-gain.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;   
+    background-position: center; 
+}
+
+section.cover-form{
+    width: 100%;
+    padding: 0 2%;
+}
+
+.bg{
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../images/bg-form.jpg');
+}
+
+.form-container{
+    margin-right: 40px;
+    float: right;
+    width: 500px;
+    height: 100px;
+    background-color: white; 
+}
+
+.form-container h2{
+    text-align: center;
+    font-weight: normal;
+    padding: 15px;
+    color: #022859;
+    font-size: 18px;
+    background-color: #F2B544;
+}
+
+
+/*responsivo*/
+@media screen and (max-width: 510px){
+    
+    header{
+        text-align: center;
+    }
+    .logo-1, .logo-2{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+
+        /*Outra forma de aplicar o style
+            [class ^= "logo"]{
+                margin-top: 10px;
+                display: inline-block;
+                float: none;
+            }
+        */
+    }
+}
+
