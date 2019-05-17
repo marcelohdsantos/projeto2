@@ -50,7 +50,7 @@ header{
 
 section.cover-form{
     width: 100%;
-    padding: 0 2%;
+   
 }
 
 .bg{
@@ -140,7 +140,7 @@ section.chamada .container{
 
 section.chamada h2{
     margin-top: 10px;
-    width: 96%;
+    width: 98%;
     display: inline-block;
     max-width: 600px;
     color: white;
@@ -153,7 +153,40 @@ section.chamada p{
     font-size: 18px;
 }
 
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+
+}
+
+.item-2-mosaico{
+    width: 30%;
+    text-align: justify;
+}
+
 /*responsivo*/
+
+@media screen and (max-width: 960px){
+    .bg{
+
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .form-container{
+        height: auto;
+        width: 98%;
+        max-width: 400px;
+        position: relative;
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width: 510px){
     
     header{
@@ -174,3 +207,4 @@ section.chamada p{
     }
 }
 
+/*parado em 6:29*/
